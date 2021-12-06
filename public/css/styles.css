@@ -1,0 +1,145 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    
+}
+body {
+    background-color: #1a5d9c;
+
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    top: 15vh;
+   
+    border-radius: 5px;
+
+}
+.container__image {
+    width: 100%;
+    background-color: #2a92f40a;
+    border-radius: 12px 0 0 12px;
+    
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.image {
+    height: 100%;
+
+   
+}
+.signup {
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 12px 12px 0;
+    padding: 3% 8%;
+    
+}
+
+.signup__header p {
+    font-size: 1.4rem;
+    margin-top: -5px;
+}
+.signup__form {
+    margin-top: 10%;
+}
+.text {
+    font-size: 1.2rem;
+    
+}
+.signup__form input {
+    border-radius: 5px;
+    width: 80%;
+    height: 25px;
+    border: none;
+    background-color: rgba(238, 230, 230, 0.253);
+    margin-bottom: 5px;
+    transition: all .2s ease;
+}
+.signup__form input:hover {
+    border: 1.5px solid #1a5d9c;
+    background-color: #fff;
+    width: 82%;
+
+}
+.button {
+    margin-top: 5%;
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1C64A9;
+    color: #fff;
+    transition: all .3s ease-in;  
+}
+.button2 {
+    width: 30%;
+    position: relative;
+    left: 35%;
+    margin: 0 auto;
+    border: 1px solid #1b5388;
+    
+}
+.button:hover {
+    background-color: #2A94F4;
+} 
+.logo img {
+    position: absolute;
+    z-index: 1;
+    width: 15%;
+    height: 30%;
+    top: -15%;
+    right: -5%;
+}
+
+.successTitle {
+    font-size: 3.2rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    color: #eaeef1;
+}
+.successImg {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+@media  screen and (max-width: 800px) {
+    .container__image {
+        display: none;
+        width: 0%;
+    }
+    .signup {
+        width: 100%;
+        border-radius: 12px;
+        height: 65vh;
+    }
+
+    .logo img {
+        top: 80%;
+        width: 30%;
+        height: 20%;
+        
+        right: -2%;
+    }
+}
